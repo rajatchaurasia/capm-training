@@ -1,0 +1,32 @@
+GET http://localhost:4004/capm/Employees_Managed
+
+###
+GET http://localhost:4004/capm/Addresses_Managed
+
+####
+
+POST http://localhost:4004/capm/Employees_Unmanaged
+Content-Type: application/json
+
+{
+  "EmpName" : "XYZ"
+  
+
+}
+
+####
+
+
+POST http://localhost:4004/capm/Addresses_Unmanaged
+Content-Type: application/json
+
+{
+    "Id": 123,
+    "PinCode": 500088,
+    "City": "HYD",
+    "OfficeColour": "fsjkbsj"
+
+}
+
+###
+DELETE http://localhost:4004/capm/Employees_Managed('XYZ')
